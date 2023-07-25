@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left-navbar">
+                <button class="navbar-btn menu-btn" id="menuBtn"><svg class="menu_icon icon-navbar" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M4.5 5h15a.5.5 0 110 1h-15a.5.5 0 010-1zm0 6h15a.5.5 0 110 1h-15a.5.5 0 110-1zm0 6h15a.5.5 0 110 1h-15a.5.5 0 110-1z">
+                        </path>
+                    </svg></button>
+                <button class="navbar-btn"><svg class="icon-navbar" width="24" height="24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.527 3.075c.35.104.64.263 1.27.876L19.1 9.123c.374.364.49.505.601.678.11.174.185.351.232.552.042.178.062.34.066.742L20 17.718c0 .446-.046.607-.134.77a.906.906 0 01-.378.378c-.163.088-.324.134-.77.134H14v-4.718c0-.446-.046-.607-.134-.77a.906.906 0 00-.378-.378c-.142-.077-.284-.122-.616-.132L12.718 13h-1.436c-.446 0-.607.046-.77.134a.906.906 0 00-.378.378c-.077.142-.122.284-.132.616l-.002.154V19H5.282c-.446 0-.607-.046-.77-.134a.906.906 0 01-.378-.378c-.088-.163-.134-.324-.134-.77v-6.462c0-.522.02-.703.067-.903.047-.2.121-.378.232-.552l.077-.113c.098-.134.233-.282.524-.565l5.304-5.172c.629-.613.92-.772 1.269-.876a1.82 1.82 0 011.054 0zm-.286.958a.825.825 0 00-.482 0c-.18.054-.326.139-.63.418l-.227.216L5.598 9.84c-.3.293-.385.39-.456.5a.76.76 0 00-.102.242c-.026.112-.037.224-.04.531l.002 6.807.005.073.074.006L8.999 18 9 14.268l.003-.17c.013-.448.083-.749.249-1.058a1.9 1.9 0 01.788-.788c.306-.164.6-.234 1.043-.249l.199-.003h1.45l.17.003c.448.013.749.083 1.058.249.337.18.608.45.788.788.164.306.234.6.249 1.043l.003.199L14.999 18l3.92-.002.073-.006.006-.073.002-.2v-6.615l-.005-.218a1.494 1.494 0 00-.035-.305.747.747 0 00-.102-.242l-.059-.084a3.571 3.571 0 00-.294-.315l-5.407-5.273c-.425-.414-.604-.545-.798-.615l-.06-.019z">
+                        </path>
+                    </svg></button>
+                <div class="searchbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"
+                        class="search_icon">
+                        <path
+                            d="M10.5 3a7.5 7.5 0 015.645 12.438l4.709 4.708a.502.502 0 01-.708.708l-4.708-4.709A7.5 7.5 0 1110.5 3zm0 1a6.5 6.5 0 100 13 6.5 6.5 0 000-13z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <div class="searchbar-input">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="right-navbar">
+                <button class="navbar-btn top-add-task-btn"><svg class="icon-navbar" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd" transform="translate(4 3)">
+                            <mask id="jd4FBg" fill="#fff">
+                                <path
+                                    d="M9 8h7a.5.5 0 1 1 0 1H9v7a.5.5 0 1 1-1 0V9H1a.5.5 0 0 1 0-1h7V1a.5.5 0 0 1 1 0v7z">
+                                </path>
+                            </mask>
+                            <g mask="url(#jd4FBg)">
+                                <path fill="currentColor" d="M-4-3h24v24H-4z"></path>
+                            </g>
+                        </g>
+                    </svg></button>
+                <button class="navbar-btn"><svg class="icon-navbar" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M12 3a5.75 5.75 0 015.75 5.75c0 3.24.682 5.875 2.03 7.927A1.5 1.5 0 0118.525 19H14.5a2.5 2.5 0 01-5 0H5.475a1.501 1.501 0 01-1.254-2.323C5.568 14.625 6.25 11.989 6.25 8.75A5.75 5.75 0 0112 3zm1.5 16h-3a1.5 1.5 0 003 0zM12 4a4.75 4.75 0 00-4.75 4.75c0 3.423-.731 6.248-2.193 8.476a.5.5 0 00.418.774h13.05a.5.5 0 00.418-.774c-1.462-2.227-2.193-5.053-2.193-8.476A4.75 4.75 0 0012 4z"
+                            fill="currentColor" fill-rule="nonzero"></path>
+                    </svg></button>
+                <div class="profile-image">
+                    <img src="./images/moon1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="menu-container">
+                <div class="menu-container-top">
+                    <div class="menu-container-top-top">
+                        <div class="inbox">
+                            <button id="menu-option-btn" class="missed">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="Dd3PmF2g5h93YIf1bCDdiA==">
+                                    <g fill="blue" fill-rule="nonzero">
+                                        <path
+                                            d="M10 14.5a2 2 0 104 0h5.5V18a1.5 1.5 0 01-1.5 1.5H6A1.5 1.5 0 014.5 18v-3.5H10z"
+                                            opacity="0.1"></path>
+                                        <path
+                                            d="M8.062 4h7.876a2 2 0 011.94 1.515l2.062 8.246a2 2 0 01.06.485V18a2 2 0 01-2 2H6a2 2 0 01-2-2v-3.754a2 2 0 01.06-.485l2.06-8.246A2 2 0 018.061 4zm0 1a1 1 0 00-.97.757L5.03 14.004a1 1 0 00-.03.242V18a1 1 0 001 1h12a1 1 0 001-1v-3.754a1 1 0 00-.03-.242l-2.06-8.247A1 1 0 0015.94 5H8.061zM12 17.25A2.75 2.75 0 019.295 15H7a.5.5 0 110-1h2.75a.5.5 0 01.5.5 1.75 1.75 0 003.5 0 .5.5 0 01.5-.5H17a.5.5 0 110 1h-2.295A2.75 2.75 0 0112 17.25z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Missed</span>
+                            </button>
+                        </div>
+                        <div class="inbox">
+                            <button id="menu-option-btn" class="today">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="ONBJEQtK++jnfUWJ3V90Dw==">
+                                    <g fill="green" fill-rule="evenodd">
+                                        <path fill-rule="nonzero"
+                                            d="M6 4.5h12A1.5 1.5 0 0 1 19.5 6v2.5h-15V6A1.5 1.5 0 0 1 6 4.5z" opacity=".1">
+                                        </path>
+                                        <path fill-rule="nonzero"
+                                            d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6zm1 3h10a.5.5 0 1 1 0 1H7a.5.5 0 0 1 0-1z">
+                                        </path><text
+                                            font-family="-apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                                            font-size="9" transform="translate(4 2)" font-weight="500">
+                                            <tspan x="8" y="15" text-anchor="middle">20</tspan>
+                                        </text>
+                                    </g>
+                                </svg>
+                                <span>Today</span>
+                            </button>
+                            
+                        </div>
+                        <div class="inbox">
+                            <button id="menu-option-btn" class="upcoming">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="SWWJ2mDmoJ5jpYGsCY5nBA==">
+                                <g fill="purple" fill-rule="nonzero">
+                                    <path d="M6 4.5h12A1.5 1.5 0 0119.5 6v2.5h-15V6A1.5 1.5 0 016 4.5z" opacity="0.1">
+                                    </path>
+                                    <path
+                                        d="M6 4h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2zm0 1a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1H6zm10 12a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm8-4a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zM7 8h10a.5.5 0 110 1H7a.5.5 0 010-1z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span>Upcoming</span>
+                            </button>
+                            
+                        </div>
+                        <div class="inbox">
+                            <button id="menu-option-btn" class="suggestion">
+                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="yeJ7DFSh0CB61w0UHm64kQ==">
+                                <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13 6.5A1.5 1.5 0 0114.5 5h3A1.5 1.5 0 0119 6.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 0113 9.5v-3zM6.5 13A1.5 1.5 0 005 14.5v3A1.5 1.5 0 006.5 19h3a1.5 1.5 0 001.5-1.5v-3A1.5 1.5 0 009.5 13h-3zm8 0a1.5 1.5 0 00-1.5 1.5v3a1.5 1.5 0 001.5 1.5h3a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-3zm-8-8A1.5 1.5 0 005 6.5v3A1.5 1.5 0 006.5 11h3A1.5 1.5 0 0011 9.5v-3A1.5 1.5 0 009.5 5h-3z"
+                                    fill="orange"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.5 6h-3a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5zm-3-1A1.5 1.5 0 0013 6.5v3a1.5 1.5 0 001.5 1.5h3A1.5 1.5 0 0019 9.5v-3A1.5 1.5 0 0017.5 5h-3zm-8 9h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-1.5.5A1.5 1.5 0 016.5 13h3a1.5 1.5 0 011.5 1.5v3A1.5 1.5 0 019.5 19h-3A1.5 1.5 0 015 17.5v-3zm9.5-.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-1.5.5a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3a1.5 1.5 0 01-1.5-1.5v-3zM6.5 6h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zM5 6.5A1.5 1.5 0 016.5 5h3A1.5 1.5 0 0111 6.5v3A1.5 1.5 0 019.5 11h-3A1.5 1.5 0 015 9.5v-3z"
+                                    fill="orange"></path>
+                            </svg>
+                            <span>Suggestions</span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="menu-container-top-bottom">
+
+                    </div>
+                </div>
+                <div class="menu-container-bottom">
+                    <div class="menu-container-bottom-icon">
+                        <svg width="13" height="13">
+                            <path d="M6 6V.5a.5.5 0 011 0V6h5.5a.5.5 0 110 1H7v5.5a.5.5 0 11-1 0V7H.5a.5.5 0 010-1H6z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="menu-container-bottom-content">
+                        <span>Add workspace</span>
+                    </div>
+                </div>
+            </div>
+            <div class="daily-task">
+
+                <div class="daily-task-container">
+                    <div class="add-task-card">
+                        <div class="task-detail">
+                            <input type="text" placeholder="Task name" id="taskNameInput" required>
+                            <input type="text" placeholder="Description" id="descriptionInput" required>
+                            <div class="add-on-btns">
+                                <button id="dateButton">
+                                    <input type="date" id="dateInput">
+                                </button>
+                                <button><svg width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" class="SWWJ2mDmoJ5jpYGsCY5nBA==">
+                                        <g fill="purple" fill-rule="nonzero">
+                                            <path d="M6 4.5h12A1.5 1.5 0 0119.5 6v2.5h-15V6A1.5 1.5 0 016 4.5z"
+                                                opacity="0.1">
+                                            </path>
+                                            <path
+                                                d="M6 4h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2zm0 1a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1H6zm10 12a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm8-4a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zM7 8h10a.5.5 0 110 1H7a.5.5 0 010-1z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span>Priority</span></button>
+                                <button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="yeJ7DFSh0CB61w0UHm64kQ==">
+                                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13 6.5A1.5 1.5 0 0114.5 5h3A1.5 1.5 0 0119 6.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 0113 9.5v-3zM6.5 13A1.5 1.5 0 005 14.5v3A1.5 1.5 0 006.5 19h3a1.5 1.5 0 001.5-1.5v-3A1.5 1.5 0 009.5 13h-3zm8 0a1.5 1.5 0 00-1.5 1.5v3a1.5 1.5 0 001.5 1.5h3a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-3zm-8-8A1.5 1.5 0 005 6.5v3A1.5 1.5 0 006.5 11h3A1.5 1.5 0 0011 9.5v-3A1.5 1.5 0 009.5 5h-3z"
+                                            fill="orange"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.5 6h-3a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5zm-3-1A1.5 1.5 0 0013 6.5v3a1.5 1.5 0 001.5 1.5h3A1.5 1.5 0 0019 9.5v-3A1.5 1.5 0 0017.5 5h-3zm-8 9h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-1.5.5A1.5 1.5 0 016.5 13h3a1.5 1.5 0 011.5 1.5v3A1.5 1.5 0 019.5 19h-3A1.5 1.5 0 015 17.5v-3zm9.5-.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-1.5.5a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3a1.5 1.5 0 01-1.5-1.5v-3zM6.5 6h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zM5 6.5A1.5 1.5 0 016.5 5h3A1.5 1.5 0 0111 6.5v3A1.5 1.5 0 019.5 11h-3A1.5 1.5 0 015 9.5v-3z"
+                                            fill="orange"></path>
+                                    </svg>
+                                    <span>Reminder</span></button>
+                                <button><svg width="24" height="24" viewBox="0 0 24 24"
+                                        class="Dd3PmF2g5h93YIf1bCDdiA==">
+                                        <g fill="blue" fill-rule="nonzero">
+                                            <path
+                                                d="M10 14.5a2 2 0 104 0h5.5V18a1.5 1.5 0 01-1.5 1.5H6A1.5 1.5 0 014.5 18v-3.5H10z"
+                                                opacity="0.1"></path>
+                                            <path
+                                                d="M8.062 4h7.876a2 2 0 011.94 1.515l2.062 8.246a2 2 0 01.06.485V18a2 2 0 01-2 2H6a2 2 0 01-2-2v-3.754a2 2 0 01.06-.485l2.06-8.246A2 2 0 018.061 4zm0 1a1 1 0 00-.97.757L5.03 14.004a1 1 0 00-.03.242V18a1 1 0 001 1h12a1 1 0 001-1v-3.754a1 1 0 00-.03-.242l-2.06-8.247A1 1 0 0015.94 5H8.061zM12 17.25A2.75 2.75 0 019.295 15H7a.5.5 0 110-1h2.75a.5.5 0 01.5.5 1.75 1.75 0 003.5 0 .5.5 0 01.5-.5H17a.5.5 0 110 1h-2.295A2.75 2.75 0 0112 17.25z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span>Location</span></button>
+                            </div>
+                            <div class="line" style="height: 1px; background-color: gray;"></div>
+                            <div class="submit-task-btn">
+                                <button class="primary-btn">Cancel</button>
+                                <button class="secondary-btn" onclick="addTask()">Add task</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="daily-task-heading">
+                        <div class="daily-task-heading-left">
+                            <h1>Today</h1>
+                            <span>Thu 20 July</span>
+                        </div>
+                        <div class="daily-task-heading-right">
+                            <button class="daily-task-heading-right-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M15 14.5a2 2 0 011.936 1.498L19.5 16a.5.5 0 010 1l-2.563.001a2.001 2.001 0 01-3.874 0L4.5 17a.5.5 0 010-1l8.564-.002A2 2 0 0115 14.5zm-.982 1.81l.005-.025-.005.026-.003.014-.004.025-.007.061A.897.897 0 0014 16.5l.008.125.007.047-.001.002.003.014.006.024h-.001l.004.018.016.058.007.021.004.013.009.026.013.033.012.027-.011-.026.019.043-.008-.017.029.06-.018-.037.048.09a1 1 0 001.784-.155l.015-.039.006-.018-.015.039.022-.06-.001-.001.016-.057.004-.018.005-.024.001-.006v-.001l.005-.033.008-.06A.877.877 0 0016 16.5l-.008-.124-.007-.051-.001-.001-.003-.014-.01-.047-.004-.016-.007-.024-.01-.034-.004-.012-.01-.03-.006-.013-.007-.017-.01-.026a.998.998 0 00-1.843.043l-.014.034-.007.022-.014.047-.002.009v.001l-.005.016-.01.047zM9 9.5a2 2 0 011.936 1.498L19.5 11a.5.5 0 010 1l-8.563.001a2.001 2.001 0 01-3.874 0L4.5 12a.5.5 0 010-1l2.564-.002A2 2 0 019 9.5zm0 1a.998.998 0 00-.93.634l-.014.034-.007.022-.014.047-.002.009v.001l-.005.016-.01.047.005-.025-.005.026-.003.014-.004.025-.007.061C8 11.441 8 11.471 8 11.5l.008.125.007.047-.001.002.003.014.006.024h-.001l.004.018.016.058.007.021.004.013.009.026.013.033.012.027-.011-.026.019.043-.008-.017.029.06-.018-.037.048.09a1 1 0 001.784-.155l.015-.039.006-.018-.015.039.022-.06-.001-.001.016-.057.004-.018.005-.024.001-.006v-.001l.005-.033.008-.06A.877.877 0 0010 11.5l-.008-.124-.007-.051-.001-.001-.003-.014-.01-.047-.004-.016-.007-.024-.01-.034-.004-.012-.01-.03-.006-.013-.007-.017-.01-.026A1.002 1.002 0 009 10.5zm6-6a2 2 0 011.936 1.498L19.5 6a.5.5 0 010 1l-2.563.001a2.001 2.001 0 01-3.874 0L4.5 7a.5.5 0 010-1l8.564-.002A2 2 0 0115 4.5zm0 1a.998.998 0 00-.93.634l-.014.034-.007.022-.014.047-.002.009v.001l-.005.016-.01.047.005-.025-.005.026-.003.014-.004.025-.007.061C14 6.441 14 6.471 14 6.5l.008.125.007.047-.001.002.003.014.006.024h-.001l.004.018.016.058.007.021.004.013.009.026.013.033.012.027-.011-.026.019.043-.008-.017.029.06-.018-.037.048.09a1 1 0 001.784-.155l.015-.039.006-.018-.015.039.022-.06-.001-.001.016-.057.004-.018.005-.024.001-.006v-.001l.005-.033.008-.06C16 6.557 16 6.528 16 6.5l-.008-.124-.007-.051-.001-.001-.003-.014-.01-.047-.004-.016-.007-.024-.01-.034-.004-.012-.01-.03-.006-.013-.007-.017-.01-.026A1.002 1.002 0 0015 5.5z"
+                                        fill="currentColor" fill-rule="nonzero"></path>
+                                </svg>
+                                <span>View</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="added-tasks">
+                    </div>
+                    <div class="daily-task-body">
+                        <div class="add-task">
+                            <button class="add-task-btn">
+                                <svg class="add-task-icon" width="13" height="13">
+                                    <path
+                                        d="M6 6V.5a.5.5 0 011 0V6h5.5a.5.5 0 110 1H7v5.5a.5.5 0 11-1 0V7H.5a.5.5 0 010-1H6z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                                <span>Add task</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="upcoming-tasks-container">
+                    <div class="daily-task-heading">
+                        <div class="daily-task-heading-left">
+                            <h1>Upcoming</h1>
+                        </div>
+                    </div>
+                    <div class="upcoming-tasks-body">
+                    </div>
+                </div>
+
+
+                <div class="missed-tasks-container">
+                    <div class="daily-task-heading">
+                        <div class="daily-task-heading-left">
+                            <h1>Missed</h1>
+                        </div>
+                    </div>
+                    <div class="missed-tasks-body">
+                    </div>
+                </div>
+
+                <div class="suggestion-tasks-container">
+                    <div class="daily-task-heading">
+                        <div class="daily-task-heading-left">
+                            <h1>Suggestions</h1>
+                        </div>
+                    </div>
+                    <div class="suggestion-tasks-body">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
